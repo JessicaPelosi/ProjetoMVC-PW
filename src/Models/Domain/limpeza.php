@@ -13,7 +13,7 @@ class Limpeza {
         $this->setaplicacao($aplicacao);
         $this->setNome($nome);
         $this->setPreco($preco);
-        $this->setPreco($quantidade);
+        $this->setQuantidade($quantidade);
     }
     
     public function getAplicacao(){

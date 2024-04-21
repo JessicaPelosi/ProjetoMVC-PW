@@ -34,15 +34,6 @@ CREATE TABLE `auxiliarinstrumento` (
   `preco` double NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
---
--- Despejando dados para a tabela `auxiliarinstrumento`
---
-
-INSERT INTO `auxiliarinstrumento` (`id`, `origem`, `nome`, `preco`) VALUES
-(1, '', '', 0.69),
-(2, 'rbhhy', 'rfny', 1.5),
-(3, 'rbhhy', 'Jéssica', 1.5),
-(4, 'rbhhy', 'Jéssica', 1.65);
 
 -- --------------------------------------------------------
 
