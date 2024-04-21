@@ -43,10 +43,5 @@ class Cfop{
     public function setTipoPrestacao($tipoPrestacao){
         $this->tipoPrestacao = $tipoPrestacao;
     }
-
-
 }
-
 ?>
-
-	entradaSaida	grupoOuOperacao	tipoPrestacao	

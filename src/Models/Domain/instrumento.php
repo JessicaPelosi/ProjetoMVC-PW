@@ -8,7 +8,7 @@ class Instrumento{
     private $nome;
     private $preco;
 
-    private function __construct($id, $tipo, $nome, $preco){
+    public function __construct($id, $tipo, $nome, $preco){
         $this->setId($id);
         $this->setTipo($tipo);
         $this->setNome($nome);
