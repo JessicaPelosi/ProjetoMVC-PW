@@ -12,7 +12,7 @@ class LimpezaController{
     }
 
     public function novo($params){
-        $limpeza = new Limpeza(0,$_POST['aplicacao'],$_POST['nome'],$_POST['preco'], $_POST['quantidade']);
+        $limpeza = new Limpeza($_POST['aplicacao'],$_POST['nome'],$_POST['preco'], $_POST['quantidade']);
         $limpezaDAO = new LimpezaDAO();
         if ($limpezaDAO->inserir($limpeza)){
             return "Material de limpeza inserido com sucesso!";

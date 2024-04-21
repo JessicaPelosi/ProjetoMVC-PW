@@ -15,9 +15,9 @@ class CfopController{
         $cfop = new Cfop(0,$_POST['entradaSaida'],$_POST['grupoOuOperacao'],$_POST['tipoPrestacao']);
         $cfopDAO = new CfopDAO();
         if ($cfopDAO->inserir($cfop)){
-            return "CFOP inserido com sucesso!";
+            return "Inserido com sucesso!";
         } else {
-            return "Erro ao inserir CFOP";
+            return "Erro ao inserir";
         }
     }
 }

@@ -2,7 +2,6 @@
 namespace Php\Primeiroprojeto\Models\Domain;
 
 class Limpeza {
-    private $id;
     private $aplicacao;
     private $nome;
     private $preco;
@@ -10,18 +9,11 @@ class Limpeza {
 
  
     
-    public function __construct($id, $aplicacao, $nome, $preco, $quantidade){
-        $this->setId($id);
+    public function __construct($aplicacao, $nome, $preco, $quantidade){
         $this->setaplicacao($aplicacao);
         $this->setNome($nome);
         $this->setPreco($preco);
         $this->setPreco($quantidade);
-    }
-    public function getId(){
-        return $this->id;
-    }
-    public function setId($id){
-        $this->id = $id;
     }
     
     public function getAplicacao(){
