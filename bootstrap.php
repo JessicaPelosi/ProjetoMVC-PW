@@ -17,6 +17,8 @@ $r->get('/categoria/inserir', 'Php\Primeiroprojeto\Controllers\CategoriaControll
 
 $r->post('/categoria/novo', 'Php\Primeiroprojeto\Controllers\CategoriaController@novo');
 
+$r->get('/categoria', 'Php\Primeiroprojeto\Controllers\CategoriaController@index');
+
 $r->get('/auxiliarInstrumento/inserir', 'Php\Primeiroprojeto\Controllers\AuxiliarInstrumentoController@inserir');
 
 $r->post('/auxiliarInstrumento/novo', 'Php\Primeiroprojeto\Controllers\AuxiliarInstrumentoController@novo');
