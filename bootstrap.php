@@ -19,6 +19,18 @@ $r->post('/categoria/novo', 'Php\Primeiroprojeto\Controllers\CategoriaController
 
 $r->get('/categoria', 'Php\Primeiroprojeto\Controllers\CategoriaController@index');
 
+$r->get('/categoria/{acao}/{status}', 'Php\Primeiroprojeto\Controllers\CategoriaController@index');
+
+$r->get('/categoria/alterar/id/{id}', 'Php\Primeiroprojeto\Controllers\CategoriaController@alterar');
+
+$r->get('/categoria/excluir/id/{id}', 'Php\Primeiroprojeto\Controllers\CategoriaController@excluir');
+
+$r->post('/categoria/editar', 'Php\Primeiroprojeto\Controllers\CategoriaController@editar');
+
+$r->post('/categoria/deletar', 'Php\Primeiroprojeto\Controllers\CategoriaController@deletar');
+
+#atividades
+
 $r->get('/auxiliarInstrumento/inserir', 'Php\Primeiroprojeto\Controllers\AuxiliarInstrumentoController@inserir');
 
 $r->post('/auxiliarInstrumento/novo', 'Php\Primeiroprojeto\Controllers\AuxiliarInstrumentoController@novo');

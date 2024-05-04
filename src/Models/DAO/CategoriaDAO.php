@@ -40,7 +40,7 @@ class CategoriaDAO{
         try{
             $sql = "DELETE FROM categorias WHERE id = :id";
             $p = $this->conexao->getConexao()->prepare($sql);
-            $p->bindValue(":id", $id->getId());
+            $p->bindValue(":id", $id);
             return $p->execute();
         } catch(\Exception $e){
             return 0;
