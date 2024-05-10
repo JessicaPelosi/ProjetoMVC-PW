@@ -29,19 +29,37 @@ $r->post('/categoria/editar', 'Php\Primeiroprojeto\Controllers\CategoriaControll
 
 $r->post('/categoria/deletar', 'Php\Primeiroprojeto\Controllers\CategoriaController@deletar');
 
-#atividades
+//chamando o formulário para inserir auxiliarInstrumento
 
 $r->get('/auxiliarInstrumento/inserir', 'Php\Primeiroprojeto\Controllers\AuxiliarInstrumentoController@inserir');
 
 $r->post('/auxiliarInstrumento/novo', 'Php\Primeiroprojeto\Controllers\AuxiliarInstrumentoController@novo');
 
+//chamando o formulário para inserir cfop
+
 $r->get('/cfop/inserir', 'Php\Primeiroprojeto\Controllers\CfopController@inserir');
 
 $r->post('/cfop/novo', 'Php\Primeiroprojeto\Controllers\CfopController@novo');
 
+$r->get('/cfop', 'Php\Primeiroprojeto\Controllers\CfopController@index');
+
+$r->get('/cfop/{acao}/{status}', 'Php\Primeiroprojeto\Controllers\CfopController@index');
+
+$r->get('/cfop/alterar/id/{id_CFOP}', 'Php\Primeiroprojeto\Controllers\CfopController@alterar');
+
+$r->get('/cfop/excluir/id/{id_CFOP}', 'Php\Primeiroprojeto\Controllers\CfopController@excluir');
+
+$r->post('/cfop/editar', 'Php\Primeiroprojeto\Controllers\CfopController@editar');
+
+$r->post('/cfop/deletar', 'Php\Primeiroprojeto\Controllers\CfopController@deletar');
+
+//chamando o formulário para inserir instrumento
+
 $r->get('/instrumento/inserir', 'Php\Primeiroprojeto\Controllers\InstrumentoController@inserir');
 
 $r->post('/instrumento/novo', 'Php\Primeiroprojeto\Controllers\InstrumentoController@novo');
+
+//chamando o formulário para inserir limpeza
 
 $r->get('/limpeza/inserir', 'Php\Primeiroprojeto\Controllers\LimpezaController@inserir');
 
