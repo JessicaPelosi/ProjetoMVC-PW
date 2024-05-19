@@ -71,11 +71,26 @@ $r->get('/instrumento/inserir', 'Php\Primeiroprojeto\Controllers\InstrumentoCont
 
 $r->post('/instrumento/novo', 'Php\Primeiroprojeto\Controllers\InstrumentoController@novo');
 
+$r->get('/instrumento', 'Php\Primeiroprojeto\Controllers\InstrumentoController@index');
+
+$r->get('/instrumento/{acao}/{status}', 'Php\Primeiroprojeto\Controllers\InstrumentoController@index');
+
+$r->get('/instrumento/alterar/id/{id}', 'Php\Primeiroprojeto\Controllers\InstrumentoController@alterar');
+
+$r->get('/instrumento/excluir/id/{id}', 'Php\Primeiroprojeto\Controllers\InstrumentoController@excluir');
+
+$r->post('/instrumento/editar', 'Php\Primeiroprojeto\Controllers\InstrumentoController@editar');
+
+$r->post('/instrumento/deletar', 'Php\Primeiroprojeto\Controllers\InstrumentoController@deletar');
+
+
 //chamando o formulário para inserir limpeza
 
 $r->get('/limpeza/inserir', 'Php\Primeiroprojeto\Controllers\LimpezaController@inserir');
 
 $r->post('/limpeza/novo', 'Php\Primeiroprojeto\Controllers\LimpezaController@novo');
+
+
 
 #ROTAS
 
