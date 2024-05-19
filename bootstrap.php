@@ -90,7 +90,17 @@ $r->get('/limpeza/inserir', 'Php\Primeiroprojeto\Controllers\LimpezaController@i
 
 $r->post('/limpeza/novo', 'Php\Primeiroprojeto\Controllers\LimpezaController@novo');
 
+$r->get('/limpeza', 'Php\Primeiroprojeto\Controllers\LimpezaController@index');
 
+$r->get('/limpeza/{acao}/{status}', 'Php\Primeiroprojeto\Controllers\LimpezaController@index');
+
+$r->get('/limpeza/alterar/id/{id}', 'Php\Primeiroprojeto\Controllers\LimpezaController@alterar');
+
+$r->get('/limpeza/excluir/id/{id}', 'Php\Primeiroprojeto\Controllers\LimpezaController@excluir');
+
+$r->post('/limpeza/editar', 'Php\Primeiroprojeto\Controllers\LimpezaController@editar');
+
+$r->post('/limpeza/deletar', 'Php\Primeiroprojeto\Controllers\LimpezaController@deletar');
 
 #ROTAS
 
