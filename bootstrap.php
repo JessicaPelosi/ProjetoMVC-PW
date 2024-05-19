@@ -35,6 +35,18 @@ $r->get('/auxiliarInstrumento/inserir', 'Php\Primeiroprojeto\Controllers\Auxilia
 
 $r->post('/auxiliarInstrumento/novo', 'Php\Primeiroprojeto\Controllers\AuxiliarInstrumentoController@novo');
 
+$r->get('/auxiliarInstrumento', 'Php\Primeiroprojeto\Controllers\AuxiliarInstrumentoController@index');
+
+$r->get('/auxiliarInstrumento/{acao}/{status}', 'Php\Primeiroprojeto\Controllers\AuxiliarInstrumentoController@index');
+
+$r->get('/auxiliarInstrumento/alterar/id/{id}', 'Php\Primeiroprojeto\Controllers\AuxiliarInstrumentoController@alterar');
+
+$r->get('/auxiliarInstrumento/excluir/id/{id}', 'Php\Primeiroprojeto\Controllers\AuxiliarInstrumentoController@excluir');
+
+$r->post('/auxiliarInstrumento/editar', 'Php\Primeiroprojeto\Controllers\AuxiliarInstrumentoController@editar');
+
+$r->post('/auxiliarInstrumento/deletar', 'Php\Primeiroprojeto\Controllers\AuxiliarInstrumentoController@deletar');
+
 //chamando o formulário para inserir cfop
 
 $r->get('/cfop/inserir', 'Php\Primeiroprojeto\Controllers\CfopController@inserir');
